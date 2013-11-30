@@ -13,6 +13,6 @@ public class DragonBrain : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.LookAt(player.transform);
-		transform.Translate(Vector3.forward * Time.deltaTime);
+		transform.Translate(Vector3.forward*500 * Time.deltaTime);
 	}
 }
