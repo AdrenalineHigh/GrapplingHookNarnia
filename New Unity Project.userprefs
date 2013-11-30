@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\DragonBrain.cs">
+    <Files>
+      <File FileName="Assets\player1.cs" Line="130" Column="5" />
+      <File FileName="Assets\manyChunks.cs" Line="1" Column="1" />
+      <File FileName="Assets\MusicDelay.cs" Line="1" Column="1" />
+      <File FileName="Assets\MeshCreationHelper.cs" Line="1" Column="1" />
+      <File FileName="Assets\Fracture.cs" Line="15" Column="71" />
+      <File FileName="Assets\Reticle.cs" Line="22" Column="105" />
+      <File FileName="Assets\DragonBrain.cs" Line="16" Column="57" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
