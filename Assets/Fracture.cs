@@ -17,9 +17,9 @@ public class Fracture : MonoBehaviour {
 		
 		
 		//Make new game object for mesh fragment
-		GameObject newGO = new GameObject( "top/shard1" );
+		GameObject newGO = new GameObject( "shard1" );
 		
-		//Instantiate(newGO, transform.position, transform.rotation);	//Set to it's parent's coordinates.
+		//Instantiate(newGO, transform.position, transform.rotation);	// Set to it's parent's coordinates.
 		//newGO.transform.parent = transform;
 		
         MeshFilter meshFilter = newGO.AddComponent<MeshFilter>();
@@ -32,10 +32,13 @@ public class Fracture : MonoBehaviour {
 		newGO.renderer.material.mainTexture = Resources.Load("LittleCity1") as Texture;;
 		
 		shard = newGO;//GameObject.Find ("shard1");
-		
-		shard.transform.Rotate(270, 0, 0);
-		shard.transform.position = GameObject.Find ("LittleCity1").transform.position + Vector3.up*2;
+
+		shard.transform.parent = GameObject.Find("top").transform;//parentObject.transform 
+		//shard.transform.Rotate(270, 0, 0); // Default
+		shard.transform.Rotate(220, 0, 0);
+		shard.transform.position = GameObject.Find ("LittleCity1").transform.position + Vector3.up*10;
 		shard.transform.localScale = GameObject.Find ("LittleCity1").transform.localScale;
+		
 	}
 	
 	// Update is called once per frame
