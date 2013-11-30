@@ -45,6 +45,8 @@ public class player1 : MonoBehaviour {
 	CTether tether = new CTether();
 
 	public double frameCount;
+
+	public GameObject PlayerHead;
 	
 	// Use this for initialization
 	void Start () {
@@ -54,6 +56,8 @@ public class player1 : MonoBehaviour {
 		Screen.lockCursor = true;
 
 		velocity = new Vector3 (0, 0, 0);
+
+		PlayerHead = GameObject.Find("Player/View");
 	}
 	
 	
@@ -77,7 +81,7 @@ public class player1 : MonoBehaviour {
 		
 		if (!tether.tethered && Input.GetAxis("Fire2") == 1) {
 			//if (Physics.Raycast(transform.position, -transform.rotation.eulerAngles, out hitInfo)) {
-			if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitInfo)) {
+			if (Physics.Raycast(transform.position, PlayerHead.transform.TransformDirection(Vector3.forward), out hitInfo)) {
 				tether.tethered = true;
 				tether.point = hitInfo.point;
 				//tether.distance = hitInfo.distance;
@@ -104,7 +108,7 @@ public class player1 : MonoBehaviour {
 		acceleration = new Vector3(Input.GetAxis("Horizontal") * speed, 0, Input.GetAxis("Vertical") * speed);
 		acceleration *= Time.deltaTime;
 		//velocity += transform.TransformDirection(acceleration) + Vector3.down*gravity*Time.deltaTime;	// Apply local acceleration and world gravity
-		velocity += Quaternion.Euler(0, transform.localEulerAngles.y, 0)*acceleration + Vector3.down*gravity*Time.deltaTime;	// Apply local (horizontal) acceleration and world gravity
+		velocity += Quaternion.Euler(0, PlayerHead.transform.localEulerAngles.y, 0)*acceleration + Vector3.down*gravity*Time.deltaTime;	// Apply local (horizontal) acceleration and world gravity
 
 		//velocity *= Time.deltaTime;
 		//Debug.Log(velocity);
@@ -120,7 +124,7 @@ public class player1 : MonoBehaviour {
 			tether.retractSpeed = 0;
 		}
 		
-		bodyOrientation = Quaternion.identity;
+		//bodyOrientation = Quaternion.identity;
 		if (tether.tethered && Input.GetAxis("Fire2") == 1)
 		{
 			Debug.DrawLine(tether.point, transform.position, Color.red, 30, true);
@@ -145,7 +149,7 @@ public class player1 : MonoBehaviour {
 				//Debug.Log("Angle X Y: " + Mathf.Atan2(tempVector.x, tempVector.y) * Mathf.Rad2Deg);
 
 				
-				bodyOrientation = Quaternion.FromToRotation(Vector3.up, tempVector);
+				//bodyOrientation = Quaternion.FromToRotation(Vector3.up, tempVector);
 				
 				
 				//transform.position = testPosition;
@@ -194,6 +198,6 @@ public class player1 : MonoBehaviour {
 		
 		headOrientation = Quaternion.Euler(mouseDirection);
 		
-		transform.rotation = headOrientation;//bodyOrientation*headOrientation;//*bodyOrientation;
+		PlayerHead.transform.rotation = headOrientation;//bodyOrientation*headOrientation;//*bodyOrientation;
     }
 }
