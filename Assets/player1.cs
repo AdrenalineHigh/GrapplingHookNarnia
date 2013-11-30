@@ -43,6 +43,8 @@ public class player1 : MonoBehaviour {
 	public Vector3 oldPosition;
 	
 	CTether tether = new CTether();
+
+	public double frameCount;
 	
 	// Use this for initialization
 	void Start () {
@@ -56,12 +58,18 @@ public class player1 : MonoBehaviour {
 	
 	
     void Update() {
+
 		
 		CharacterController controller = GetComponent<CharacterController>();
 		
 		if(controller.isGrounded) velocity *= .5F;
 		velocity = transform.position - oldPosition;
-		
+
+		if (frameCount < 1000) 
+			frameCount++;
+		if (frameCount < 50)
+			velocity = new Vector3 (0, 0, 0);
+
 		speed = velocity.magnitude*0.4F + 2;
 		
 		Debug.DrawLine(transform.position, oldPosition, Color.green, 30, true);

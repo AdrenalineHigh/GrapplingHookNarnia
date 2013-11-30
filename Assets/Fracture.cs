@@ -17,7 +17,7 @@ public class Fracture : MonoBehaviour {
 		
 		
 		//Make new game object for mesh fragment
-		GameObject newGO = new GameObject( "shard1" );
+		GameObject newGO = new GameObject( "top/shard1" );
 		
 		//Instantiate(newGO, transform.position, transform.rotation);	//Set to it's parent's coordinates.
 		//newGO.transform.parent = transform;
@@ -34,6 +34,8 @@ public class Fracture : MonoBehaviour {
 		shard = newGO;//GameObject.Find ("shard1");
 		
 		shard.transform.Rotate(270, 0, 0);
+		shard.transform.position = GameObject.Find ("LittleCity1").transform.position + Vector3.up*2;
+		shard.transform.localScale = GameObject.Find ("LittleCity1").transform.localScale;
 	}
 	
 	// Update is called once per frame
@@ -41,13 +43,14 @@ public class Fracture : MonoBehaviour {
 		
 		//shard.transform.Translate(Vector3.up * Time.deltaTime, Space.World);
 		//shard.transform.Rotate(0, 100 * Time.deltaTime, 0);
-		
+
+		/*
 		Mesh mesh1 = shard.GetComponent<MeshFilter>().mesh;
 		print("Shard1 New mesh vertices: " + mesh1.vertices.Length);
 		
 		print(shard.transform.position.x);
 		print(shard.transform.position.y);
 		print(shard.transform.position.z);
-			
+		*/
 	}
 }
