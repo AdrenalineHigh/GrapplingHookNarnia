@@ -50,6 +50,8 @@ public class player1 : MonoBehaviour {
 		mouseYCalibrate = Input.GetAxis("Mouse Y");
 		
 		Screen.lockCursor = true;
+
+		velocity = new Vector3 (0, 0, 0);
 	}
 	
 	
@@ -93,7 +95,9 @@ public class player1 : MonoBehaviour {
 		
 		acceleration = new Vector3(Input.GetAxis("Horizontal") * speed, 0, Input.GetAxis("Vertical") * speed);
 		acceleration *= Time.deltaTime;
-		velocity += transform.TransformDirection(acceleration) + Vector3.down*gravity*Time.deltaTime;	// Apply local acceleration and world gravity
+		//velocity += transform.TransformDirection(acceleration) + Vector3.down*gravity*Time.deltaTime;	// Apply local acceleration and world gravity
+		velocity += Quaternion.Euler(0, transform.localEulerAngles.y, 0)*acceleration + Vector3.down*gravity*Time.deltaTime;	// Apply local (horizontal) acceleration and world gravity
+
 		//velocity *= Time.deltaTime;
 		//Debug.Log(velocity);
 		
