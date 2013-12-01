@@ -4,6 +4,7 @@ using System.Collections;
 public class DragonBrain : MonoBehaviour {
 
 	private GameObject player;
+	public float speed;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +14,6 @@ public class DragonBrain : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.LookAt(player.transform);
-		transform.Translate(Vector3.forward*500 * Time.deltaTime);
+		transform.Translate(Vector3.forward*speed * Time.deltaTime);
 	}
 }

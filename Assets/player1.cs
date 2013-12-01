@@ -127,7 +127,7 @@ public class player1 : MonoBehaviour {
 		//bodyOrientation = Quaternion.identity;
 		if (tether.tethered && Input.GetAxis("Fire2") == 1)
 		{
-			Debug.DrawLine(tether.point, transform.position, Color.red, 30, true);
+			//Debug.DrawLine(tether.point, transform.position, Color.red, 30, true);
 			Debug.DrawLine(tether.point, transform.position, Color.magenta, 1, true);
 				
 			testPosition = transform.position + velocity;

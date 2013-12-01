@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\DragonBrain.cs" />
+     <Compile Include="Assets\Enemies.cs" />
      <Compile Include="Assets\Fracture.cs" />
      <Compile Include="Assets\MeshCreationHelper.cs" />
      <Compile Include="Assets\MusicDelay.cs" />

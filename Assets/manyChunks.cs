@@ -16,7 +16,7 @@ public class manyChunks : MonoBehaviour {
 			float size = Mathf.Pow((Random.value*2.4F), 7) + 8;
 			chunk.transform.localScale += new Vector3(size,size,size);
 			
-			chunk.transform.RotateAround(Vector3.up, (Random.value*360F));
+			chunk.transform.Rotate(Vector3.up, (Random.value*360F));
 			
 		}
 	}
