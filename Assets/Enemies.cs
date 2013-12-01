@@ -16,7 +16,7 @@ public class Enemies : MonoBehaviour {
 			float size = Mathf.Pow((Random.value*2.4F), 3) + 3;
 			dragonInstance.transform.localScale += new Vector3(size,size,size);
 
-			dragonInstance.GetComponent<DragonBrain>().speed = size*100F;
+			dragonInstance.GetComponent<DragonBrain>().speed = size*.1F;
 
 			dragonInstance.transform.Rotate(Vector3.up, (Random.value*360F));
 			
