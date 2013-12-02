@@ -23,7 +23,10 @@ public class DragonBrain : MonoBehaviour {
 		//velocity = transform.position - oldPosition;
 
 		transform.LookAt(player.transform);
-		transform.Translate(Vector3.forward*(Vector3.Distance(transform.position, player.transform.position)/3)*speed * Time.deltaTime);
+
+		float calcSpeed = (Vector3.Distance (transform.position, player.transform.position) / 2) * speed + 100;
+		transform.Translate(Vector3.forward* calcSpeed * Time.deltaTime);
+		//animation ["Default Take"].speed = calcSpeed / 100;
 
 		if (oldPosition != new Vector3(0,0,0))
 			Debug.DrawLine(transform.position, oldPosition, Color.blue, 10, true);
