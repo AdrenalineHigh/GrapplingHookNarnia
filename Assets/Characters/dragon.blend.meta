@@ -26,6 +26,7 @@ ModelImporter:
     100040: Wing_2_R
     100042: Wing_3_L
     100044: Wing_3_R
+    100046: Body
     400000: //RootNode
     400002: Bone_001
     400004: Bone_002
@@ -49,10 +50,12 @@ ModelImporter:
     400040: Wing_2_R
     400042: Wing_3_L
     400044: Wing_3_R
+    400046: Body
     2300000: //RootNode
     3300000: //RootNode
     4300000: Sphere
     7400000: Default Take
+    7400002: foot_1_LAction
     9500000: //RootNode
     13700000: Sphere
   materials:
@@ -69,7 +72,158 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0
+        functionName: NewEvent
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: foot_1_L
+        weight: 1
+      - path: foot_1_L/Bone_003
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_001
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_001/Bone_002
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/Bone_005
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/Bone_005/Bone_006
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_L
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_L/Leg_2_L
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_L/Leg_2_L/foot_1_L_0
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_L/Leg_2_L/foot_1_L_0/foot_2_L
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_R
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_R/Leg_2_R
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_R/Leg_2_R/foot_1_R
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_R/Leg_2_R/foot_1_R/foot_2_R
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_L
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_L/Wing_2_L
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_L/Wing_2_L/Wing_3_L
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_R
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_R/Wing_2_R
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_R/Wing_2_R/Wing_3_R
+        weight: 1
+      - path: Sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: foot_1_LAction
+      takeName: foot_1_LAction
+      firstFrame: 0
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: foot_1_L
+        weight: 1
+      - path: foot_1_L/Bone_003
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_001
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_001/Bone_002
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/Bone_005
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/Bone_005/Bone_006
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_L
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_L/Leg_2_L
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_L/Leg_2_L/foot_1_L_0
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_L/Leg_2_L/foot_1_L_0/foot_2_L
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_R
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_R/Leg_2_R
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_R/Leg_2_R/foot_1_R
+        weight: 1
+      - path: foot_1_L/Bone_003/Bone_004/leg_1_R/Leg_2_R/foot_1_R/foot_2_R
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_L
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_L/Wing_2_L
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_L/Wing_2_L/Wing_3_L
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_R
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_R/Wing_2_R
+        weight: 1
+      - path: foot_1_L/Bone_003/wing_1_R/Wing_2_R/Wing_3_R
+        weight: 1
+      - path: Sphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

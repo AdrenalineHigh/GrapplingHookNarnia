@@ -1,11 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\player1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\DragonBrain.cs">
     <Files>
-      <File FileName="Assets\player1.cs" Line="112" Column="3" />
-      <File FileName="Assets\Fracture.cs" Line="15" Column="45" />
-      <File FileName="Assets\MeshCreationHelper.cs" Line="25" Column="16" />
-      <File FileName="Assets\DragonBrain.cs" Line="16" Column="40" />
+      <File FileName="Assets\DragonBrain.cs" Line="34" Column="1" />
+      <File FileName="Assets\player1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Fracture.cs" Line="1" Column="1" />
+      <File FileName="Assets\DragonBrain.cs" Line="13" Column="37" />
+      <File FileName="Assets\Enemies.cs" Line="1" Column="1" />
+      <File FileName="Assets\manyChunks.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

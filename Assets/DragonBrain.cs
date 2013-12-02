@@ -10,6 +10,7 @@ public class DragonBrain : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find("Player");
+		animation.CrossFade ("Default Take", 0.2f);
 	}
 	
 	// Update is called once per frame

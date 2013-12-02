@@ -4,7 +4,7 @@ using System.Collections;
 public class Enemies : MonoBehaviour {
 
 	public GameObject Dragon;
-	public
+	//public
 
 	// Use this for initialization
 	void Start() {
@@ -13,10 +13,10 @@ public class Enemies : MonoBehaviour {
 			dragonInstance = Instantiate(Dragon) as GameObject;
 			
 			dragonInstance.transform.position = Random.insideUnitSphere * 20000 + Vector3.up*12000;
-			float size = Mathf.Pow((Random.value*2.4F), 3) + 3;
+			float size = (Mathf.Pow((Random.value*2.4F), 3) + 3) * 100;
 			dragonInstance.transform.localScale += new Vector3(size,size,size);
 
-			dragonInstance.GetComponent<DragonBrain>().speed = size*.1F;
+			dragonInstance.GetComponent<DragonBrain>().speed = size*.001F;
 
 			dragonInstance.transform.Rotate(Vector3.up, (Random.value*360F));
 			
