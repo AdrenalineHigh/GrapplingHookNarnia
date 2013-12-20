@@ -46,16 +46,37 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DX11 Particles\Example Scene and Use\Root.cs" />
+     <Compile Include="Assets\DX11 Particles\Scripts\DX11ParticleController.cs" />
+     <Compile Include="Assets\DX11 Particles\Scripts\DX11ParticleSystem.cs" />
+     <Compile Include="Assets\DX11 Particles\Scripts\Extensions\DX11ForceExtension.cs" />
+     <Compile Include="Assets\DX11 Particles\Scripts\ParticleSaveData.cs" />
+     <Compile Include="Assets\DX11 Particles\Utils\Utilities.cs" />
      <Compile Include="Assets\DragonBrain.cs" />
      <Compile Include="Assets\Enemies.cs" />
      <Compile Include="Assets\Fracture.cs" />
+     <Compile Include="Assets\MatCap Shaders\Demo\Assets\MC_AutoRotate.cs" />
+     <Compile Include="Assets\MatCap Shaders\Demo\Assets\MC_SwitchTexture.cs" />
      <Compile Include="Assets\MeshCreationHelper.cs" />
      <Compile Include="Assets\MusicDelay.cs" />
      <Compile Include="Assets\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Post Process Effects\VisualEffects.cs" />
      <Compile Include="Assets\Reticle.cs" />
      <Compile Include="Assets\manyChunks.cs" />
      <Compile Include="Assets\player1.cs" />
+     <None Include="Assets\DX11 Particles\ParticleSystems\Fire.xml" />
+     <None Include="Assets\DX11 Particles\ParticleSystems\default.xml" />
+     <None Include="Assets\DX11 Particles\ParticleSystems\SaveName.xml" />
+     <None Include="Assets\DX11 Particles\ParticleSystems\Yellow Flare.xml" />
+     <None Include="Assets\DX11 Particles\Resources\CSParticle.compute" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\DX11 Particles\Shaders\DrawIndirect 1.shader" />
+     <None Include="Assets\DX11 Particles\ParticleSystems\Yellow Smoke.xml" />
+     <None Include="Assets\DX11 Particles\Shaders\DrawIndirect.shader" />
+     <None Include="Assets\DX11 Particles\Shaders\Cloud.shader" />
+     <None Include="Assets\DX11 Particles\Shaders\Billboard.shader" />
+     <None Include="Assets\DX11 Particles\Resources\CSvParticle.compute" />
+     <None Include="Assets\DX11 Particles\ParticleSystems\Green Smoke.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

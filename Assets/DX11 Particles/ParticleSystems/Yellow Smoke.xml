@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParticleSaveData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <numParticles>3000</numParticles>
+  <kernelName>CSParticle</kernelName>
+  <CSName>CSParticle</CSName>
+  <materialName>Draw Particles 1</materialName>
+  <spriteName>smokepuff1</spriteName>
+  <size>1</size>
+  <color>
+    <r>0.7835821</r>
+    <g>0.7551209</g>
+    <b>0.2748385</b>
+    <a>0.09411765</a>
+  </color>
+  <scale>
+    <x>1</x>
+    <y>1</y>
+    <z>1</z>
+  </scale>
+  <gravity>1</gravity>
+  <deltatime>0.1</deltatime>
+  <minLife>10.22</minLife>
+  <maxLife>25.4</maxLife>
+  <minSize>0.3</minSize>
+  <maxSize>5.13</maxSize>
+  <minVelocity>
+    <x>-0.1</x>
+    <y>-1</y>
+    <z>-0.1</z>
+  </minVelocity>
+  <maxVelocity>
+    <x>0.1</x>
+    <y>0.1</y>
+    <z>-0.1</z>
+  </maxVelocity>
+  <minScaleOverLife>0.1</minScaleOverLife>
+  <maxScaleOverLife>1.5</maxScaleOverLife>
+  <drag>0.99</drag>
+  <killOnTimer>true</killOnTimer>
+  <wrap>false</wrap>
+</ParticleSaveData>

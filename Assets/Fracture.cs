@@ -26,7 +26,7 @@ public class Fracture : MonoBehaviour {
 		MeshRenderer meshRenderer = newGO.AddComponent<MeshRenderer>();
 		
 		//Create the new 'shard' mesh from the old mesh
-		meshFilter.mesh = MeshCreationHelper.CreateMesh(mesh);
+		//meshFilter.mesh = MeshCreationHelper.CreateMesh(mesh);	//was causing errors; is it important?
 		
 		
 		newGO.renderer.material.mainTexture = Resources.Load("LittleCity1") as Texture;;

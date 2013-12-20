@@ -1,0 +1,162 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSvParticle
+
+struct ParticleData
+{
+	float3 Originalposition;
+	float3 position;
+	float3 velocity;
+	float3 scale;
+	float4 colour;
+	float life;
+	float startLife;
+	float4 struts;
+};
+
+struct GlobalData
+{
+	float3 origin;
+	float3 wind;
+	float3 scale;
+	float gravity;
+	float deltatime;
+	float minLife;
+	float maxLife;
+	float minSize;
+	float maxSize;
+	float3 minVelocity;
+	float3 maxVelocity;
+	float minScaleOverLife;
+	float maxScaleOverLife;
+	float drag;
+	int killOnTimer;
+	int wrap;
+	float scrollX;
+	float scrollY;
+	int numForcers;
+	float4 startColour;
+	float4 targetColour;
+};
+	
+//Buffers
+RWStructuredBuffer<GlobalData> GlobalParticleData 	: register(u1);
+RWStructuredBuffer<ParticleData> PerParticleData 	: register(u0);
+
+uint rng_state;
+
+uint rand_xorshift()
+{
+    // Xorshift algorithm from George Marsaglia's paper
+    rng_state ^= (rng_state << 13);
+    rng_state ^= (rng_state >> 17);
+    rng_state ^= (rng_state << 5);
+    return rng_state;
+}
+
+[numthreads(512,1,1)]
+void CSvParticle (uint3 id : SV_DispatchThreadID)
+{	
+	rng_state = id.x;
+	
+    ParticleData particleData = PerParticleData[id.x];
+    ParticleData particleStruts[4];
+    
+    //[loop]
+    for{ int i = 0;i < 4;i++ )
+    {
+    	//particleStruts[0] = PerParticleData[struts[i]];
+    }
+    
+    GlobalData globalData = GlobalParticleData[0];
+    
+    float3 position = particleData.position;
+    float3 velocity = particleData.velocity;
+    
+    //Calculate velocity
+    velocity.y += globalData.gravity;
+    velocity += globalData.wind * globalData.deltatime;
+    velocity.x -= 1;
+    
+    //Apply gravity
+    position += (velocity * globalData.drag);
+    
+    particleData.life -= globalData.deltatime;
+    
+    //Apply scale over life
+    particleData.scale += ((float(rand_xorshift()) * (1.0 / 4294967296.0)  * 
+    						(globalData.minScaleOverLife + globalData.maxScaleOverLife)) + globalData.minScaleOverLife) * globalData.deltatime;
+    						
+    float normalisedLife = abs((1 / particleData.startLife) * particleData.life);
+    
+    //Calculate colour
+    particleData.colour = lerp(globalData.startColour, globalData.targetColour, normalisedLife);
+    
+    if(particleData.life  < 0.0f && globalData.killOnTimer == 1)
+    {
+    	//Calculate normalised random values for X,Y,Z
+    	float randX = float(rand_xorshift()) * (1.0 / 4294967296.0);
+    	float randY = float(rand_xorshift()) * (1.0 / 4294967296.0);
+    	float randZ = float(rand_xorshift()) * (1.0 / 4294967296.0);
+    	
+    	//Random position between minus scale and max scale
+    	position.x = globalData.origin.x + ((randX * (globalData.scale.x + globalData.scale.x)) + -globalData.scale.x);
+    	position.y = globalData.origin.y + ((randY * (globalData.scale.y + globalData.scale.y)) + -globalData.scale.y);
+    	position.z = globalData.origin.z + ((randZ * (globalData.scale.z + globalData.scale.z)) + -globalData.scale.z);
+    	
+    	particleData.life += ((float(rand_xorshift()) * (1.0 / 4294967296.0)) * (globalData.maxLife - globalData.minLife));
+    	particleData.startLife = particleData.life;
+    	particleData.scale = ((float(rand_xorshift()) * (1.0 / 4294967296.0)) * (globalData.maxSize - globalData.minSize));
+    	
+    	particleData.velocity.x =  (randX * (-globalData.minVelocity.x + globalData.maxVelocity.x)) + globalData.minVelocity.x;
+    	particleData.velocity.y =  (randY * (-globalData.minVelocity.y + globalData.maxVelocity.y)) + globalData.minVelocity.y;
+    	particleData.velocity.z =  (randZ * (-globalData.minVelocity.z + globalData.maxVelocity.z)) + globalData.minVelocity.z;
+    }
+    
+    //Check wrap collisions
+    if(globalData.wrap == 1)
+    {
+    	//Wrap positions if position is greater than scale
+    	if(position.x > (globalData.origin.x + globalData.scale.x))
+    	{
+    		//push left
+    		position.x -= (globalData.scale.x * 2);
+    	}
+    	
+    	if(position.x < (globalData.origin.x - globalData.scale.x))
+    	{
+    		//push left
+    		position.x += (globalData.scale.x * 2);
+    	}
+    	
+    	if(position.y > (globalData.origin.y + globalData.scale.y))
+    	{
+    		//push left
+    		position.y -= (globalData.scale.y * 2);
+    	}
+    	
+    	if(position.y < (globalData.origin.y - globalData.scale.y))
+    	{
+    		//push left
+    		position.y += (globalData.scale.y * 2);
+    	}
+    	
+    	if(position.z > (globalData.origin.z + globalData.scale.z))
+    	{
+    		//push left
+    		position.z -= (globalData.scale.z * 2);
+    	}
+    	
+    	if(position.z < (globalData.origin.z - globalData.scale.z))
+    	{
+    		//push left
+    		position.z += (globalData.scale.z * 2);
+    	}
+    }
+    
+    //Calculate drag for next frame
+    particleData.velocity *= globalData.drag;
+    particleData.position = position;
+    PerParticleData[id.x] = particleData;
+}
+
+

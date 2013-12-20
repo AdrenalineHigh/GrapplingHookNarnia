@@ -86,9 +86,18 @@ public class player1 : MonoBehaviour {
 				tether.point = hitInfo.point;
 				//tether.distance = hitInfo.distance;
 				tether.distance = (transform.position - hitInfo.point).magnitude;
+
 			}
 		}
-		
+
+		//Detect firing at dragons/enemies
+		if (Physics.Raycast (transform.position, PlayerHead.transform.TransformDirection (Vector3.forward), out hitInfo)) {
+			Debug.Log ("Fire");			
+			if (hitInfo.Equals (GameObject.Find ("GameObject Dragon(Clone)"))) {
+								Debug.Log ("HIT DRAGON");
+						}
+				}
+
 		//Debug.Log("Tether: ");
 		//Debug.Log(tether.tethered);
 		//Debug.Log(tether.point);

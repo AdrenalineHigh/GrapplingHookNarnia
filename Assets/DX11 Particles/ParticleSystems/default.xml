@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParticleSaveData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <size>15</size>
+  <color>
+    <r>0.422377646</r>
+    <g>0.3</g>
+    <b>1</b>
+    <a>0.03137255</a>
+  </color>
+  <gravity>1</gravity>
+  <deltatime>0.01</deltatime>
+  <minLife>2.03</minLife>
+  <maxLife>8</maxLife>
+  <minSize>3.62</minSize>
+  <maxSize>7.4</maxSize>
+  <minVelocity>2.71</minVelocity>
+  <maxVelocity>6.28</maxVelocity>
+  <drag>0.97</drag>
+  <killOnTimer>false</killOnTimer>
+  <wrap>false</wrap>
+</ParticleSaveData>
