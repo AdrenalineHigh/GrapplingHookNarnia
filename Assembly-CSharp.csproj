@@ -60,8 +60,10 @@
      <Compile Include="Assets\MeshCreationHelper.cs" />
      <Compile Include="Assets\MusicDelay.cs" />
      <Compile Include="Assets\NewBehaviourScript.cs" />
+     <Compile Include="Assets\PlayerRunner.cs" />
      <Compile Include="Assets\Post Process Effects\VisualEffects.cs" />
      <Compile Include="Assets\Reticle.cs" />
+     <Compile Include="Assets\Top.cs" />
      <Compile Include="Assets\manyChunks.cs" />
      <Compile Include="Assets\player1.cs" />
      <None Include="Assets\DX11 Particles\ParticleSystems\Fire.xml" />

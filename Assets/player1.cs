@@ -90,7 +90,7 @@ public class player1 : MonoBehaviour {
 			}
 		}
 
-		//Detect firing at dragons/enemies
+		//Detect firing at dragons/enemies. Not working yet
 		if (Physics.Raycast (transform.position, PlayerHead.transform.TransformDirection (Vector3.forward), out hitInfo)) {
 			Debug.Log ("Fire");			
 			if (hitInfo.Equals (GameObject.Find ("GameObject Dragon(Clone)"))) {
