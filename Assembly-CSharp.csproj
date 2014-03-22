@@ -49,6 +49,7 @@
      <Compile Include="Assets\BeamCalculate.cs" />
      <Compile Include="Assets\BeamEdit.cs" />
      <Compile Include="Assets\BeamHandlerScript.cs" />
+     <Compile Include="Assets\BrawlerBrain.cs" />
      <Compile Include="Assets\ConnectionCalculate.cs" />
      <Compile Include="Assets\ConnectionEdit.cs" />
      <Compile Include="Assets\DX11 Particles\Example Scene and Use\Root.cs" />
@@ -71,6 +72,8 @@
      <Compile Include="Assets\Scripts\Top.cs" />
      <Compile Include="Assets\Scripts\manyChunks.cs" />
      <Compile Include="Assets\Scripts\player1.cs" />
+     <Compile Include="Assets\brawlerControls.cs" />
+     <Compile Include="Assets\scatterSpheres.cs" />
      <None Include="Assets\DX11 Particles\ParticleSystems\Fire.xml" />
      <None Include="Assets\DX11 Particles\ParticleSystems\default.xml" />
      <None Include="Assets\DX11 Particles\ParticleSystems\SaveName.xml" />

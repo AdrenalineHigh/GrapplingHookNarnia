@@ -18,168 +18,161 @@ User locale: en-US
 System locale: en-US
 
 Running processes:
-uTorrent.exe (3032)
+uTorrent.exe (5020)
     path: C:\Users\mike\AppData\Roaming\uTorrent\uTorrent.exe
     company:  BitTorrent Inc.
     product:  µTorrent
     filedesc: µTorrent
     filever:  3.3.2.30303
     prodver:  3.3.2.30303
-Steam.exe (1432)
-    path: C:\Program Files (x86)\Steam\Steam.exe
-    company:  Valve Corporation
-    product:  Steam Client Bootstrapper
-    filedesc: Steam Client Bootstrapper
-    filever:  2.8.75.99
-    prodver:  1.0.0.1
-flux.exe (4488)
+flux.exe (5296)
     path: C:\Users\mike\AppData\Local\FluxSoftware\Flux\flux.exe
     company:  Flux Software LLC
     product:  f.lux
     filedesc: f.lux
     filever:  3.10.0.1
     prodver:  3.10.0.1
-PCCompanion.exe (3724)
+PCCompanion.exe (5328)
     path: C:\Program Files (x86)\Sony\Sony PC Companion\PCCompanion.exe
     company:  Sony
     product:  Sony PC Companion
     filedesc: Sony PC Companion
     filever:  2.1.0.0
     prodver:  2.1.0.0
-PCCompanionInfo.exe (1732)
+PCCompanionInfo.exe (5352)
     path: C:\Program Files (x86)\Sony\Sony PC Companion\PCCompanionInfo.exe
     company:  
     product:  
     filedesc: 
     filever:  0.0.0.0
     prodver:  0.0.0.0
-Dropbox.exe (4548)
+FreeAlarmClock.exe (5844)
+    path: C:\Program Files (x86)\FreeAlarmClock\FreeAlarmClock.exe
+    company:  Comfort Software Group
+    product:  Free Alarm Clock
+    filedesc: Free Alarm Clock
+    filever:  3.0.5.0
+    prodver:  3.0.5.0
+Dropbox.exe (5912)
     path: C:\Users\mike\AppData\Roaming\Dropbox\bin\Dropbox.exe
     company:  Dropbox, Inc.
     product:  Dropbox
     filedesc: Dropbox
     filever:  2.4.11.0
     prodver:  1.0.0.1
-GitHub.exe (2632)
-    path: C:\Users\mike\AppData\Local\Apps\2.0\B2HJPMOR.B98\WRHY60CR.VDM\gith..tion_317444273a93ac29_0001.0002_4e98c9eb0acf1ed4\GitHub.exe
-    company:  GitHub, Inc.
-    product:  GitHub
-    filedesc: GitHub
-    filever:  1.2.7.25
-    prodver:  1.2.7.25
-ssh-agent.exe (1296)
-    path: C:\Users\mike\AppData\Local\GitHub\PortableGit_054f2e797ebafd44a30203088cd3d58663c627ef\bin\ssh-agent.exe
-    company:  
-    product:  
-    filedesc: 
-    filever:  0.0.0.0
-    prodver:  0.0.0.0
-Creative Cloud.exe (6372)
-    path: C:\Program Files (x86)\Adobe\Adobe Creative Cloud\ACC\Creative Cloud.exe
-    company:  Adobe Systems Incorporated
-    product:  Adobe Creative Cloud
-    filedesc: Adobe Creative Cloud
-    filever:  2.4.0.348
-    prodver:  2.4.0.348
-AdobeIPCBroker.exe (676)
-    path: C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\IPC\AdobeIPCBroker.exe
-    company:  Adobe Systems Incorporated
-    product:  Adobe IPC Broker
-    filedesc: Adobe IPC Broker
-    filever:  5.0.0.66
-    prodver:  5.0.0.66
-Adobe CEF Helper.exe (5220)
-    path: C:\Program Files (x86)\Adobe\Adobe Creative Cloud\HEX\Adobe CEF Helper.exe
-    company:  Adobe Systems Incorporated
-    product:  Adobe CEF Helper
-    filedesc: Adobe CEF Helper
-    filever:  2.4.0.348
-    prodver:  2.4.0.348
-CoreSync.exe (7964)
-    path: C:\Program Files (x86)\Adobe\Adobe Creative Cloud\CoreSyncV1\CoreSync.exe
-    company:  
-    product:  CoreSync
-    filedesc: Core Sync
-    filever:  1.1.4.15
-    prodver:  1.1.4.15
-Adobe CEF Helper.exe (4236)
-    path: C:\Program Files (x86)\Adobe\Adobe Creative Cloud\HEX\Adobe CEF Helper.exe
-    company:  Adobe Systems Incorporated
-    product:  Adobe CEF Helper
-    filedesc: Adobe CEF Helper
-    filever:  2.4.0.348
-    prodver:  2.4.0.348
-Adobe CEF Helper.exe (6232)
-    path: C:\Program Files (x86)\Adobe\Adobe Creative Cloud\HEX\Adobe CEF Helper.exe
-    company:  Adobe Systems Incorporated
-    product:  Adobe CEF Helper
-    filedesc: Adobe CEF Helper
-    filever:  2.4.0.348
-    prodver:  2.4.0.348
-AAM Updates Notifier.exe (6332)
-    path: C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\UWA\AAM Updates Notifier.exe
-    company:  Adobe Systems Incorporated
-    product:  AAM Updates Notifier Application
-    filedesc: AAM Updates Notifier Application
-    filever:  7.0.0.470
-    prodver:  7.0.0.470
-IELowutil.exe (1132)
-    path: C:\Program Files (x86)\Internet Explorer\IELowutil.exe
-    company:  Microsoft Corporation
-    product:  Internet Explorer
-    filedesc: Internet Low-Mic Utility Tool
-    filever:  11.0.9600.16384
-    prodver:  11.0.9600.16384
-IEXPLORE.EXE (3748)
-    path: C:\Program Files (x86)\Internet Explorer\IEXPLORE.EXE
-    company:  Microsoft Corporation
-    product:  Internet Explorer
-    filedesc: Internet Explorer
-    filever:  11.0.9600.16384
-    prodver:  11.0.9600.16384
-windirstat.exe (12140)
-    path: C:\Program Files (x86)\WinDirStat\windirstat.exe
-    company:  Seifert
-    product:  WinDirStat
-    filedesc: Windows Directory Statistics
-    filever:  1.1.2.80
-    prodver:  1.1.2.80
-Adobe CEF Helper.exe (6368)
-    path: C:\Program Files (x86)\Adobe\Adobe Creative Cloud\HEX\Adobe CEF Helper.exe
-    company:  Adobe Systems Incorporated
-    product:  Adobe CEF Helper
-    filedesc: Adobe CEF Helper
-    filever:  2.4.0.348
-    prodver:  2.4.0.348
-TGuard.exe (11352)
-    path: C:\SBPDock\TGuard.exe
-    company:  
-    product:  
-    filedesc: 
-    filever:  0.0.0.0
-    prodver:  0.0.0.0
-avgui.exe (8388)
+avgui.exe (5936)
     path: C:\Program Files (x86)\AVG\AVG2014\avgui.exe
     company:  AVG Technologies CZ, s.r.o.
     product:  AVG Internet Security
     filedesc: AVG User Interface
     filever:  14.0.0.4330
     prodver:  14.0.0.4330
-MonoDevelop.exe (2588)
+Creative Cloud.exe (3656)
+    path: C:\Program Files (x86)\Adobe\Adobe Creative Cloud\ACC\Creative Cloud.exe
+    company:  Adobe Systems Incorporated
+    product:  Adobe Creative Cloud
+    filedesc: Adobe Creative Cloud
+    filever:  2.4.1.351
+    prodver:  2.4.1.351
+AdobeIPCBroker.exe (5600)
+    path: C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\IPC\AdobeIPCBroker.exe
+    company:  Adobe Systems Incorporated
+    product:  Adobe IPC Broker
+    filedesc: Adobe IPC Broker
+    filever:  5.0.0.66
+    prodver:  5.0.0.66
+RzSynapse.exe (5736)
+    path: C:\Program Files (x86)\Razer\Synapse\RzSynapse.exe
+    company:  Razer Inc.
+    product:  Razer Synapse
+    filedesc: Razer Synapse
+    filever:  1.16.6.18562
+    prodver:  1.16.6.18562
+Adobe CEF Helper.exe (6228)
+    path: C:\Program Files (x86)\Adobe\Adobe Creative Cloud\HEX\Adobe CEF Helper.exe
+    company:  Adobe Systems Incorporated
+    product:  Adobe CEF Helper
+    filedesc: Adobe CEF Helper
+    filever:  2.4.1.351
+    prodver:  2.4.1.351
+OBS.exe (6868)
+    path: C:\Program Files (x86)\OBS\OBS.exe
+    company:  
+    product:  Open Broadcaster Software
+    filedesc: Open Broadcaster Software
+    filever:  0.6.1.1
+    prodver:  0.6.1.1
+MonoDevelop.exe (1908)
     path: C:\Program Files (x86)\Unity\MonoDevelop\bin\MonoDevelop.exe
     company:  
     product:  MonoDevelop
     filedesc: MonoDevelop
     filever:  2.6.0.0
     prodver:  2.6.0.0
-wwahost.exe (14224)
-    path: C:\WINDOWS\syswow64\wwahost.exe
-    company:  Microsoft Corporation
-    product:  Microsoft® Windows® Operating System
-    filedesc: Microsoft WWA Host
-    filever:  6.3.9600.16431
-    prodver:  6.3.9600.16431
-UnityBugReporter.exe (10216)
+AAM Updates Notifier.exe (10028)
+    path: C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\UWA\AAM Updates Notifier.exe
+    company:  Adobe Systems Incorporated
+    product:  AAM Updates Notifier Application
+    filedesc: AAM Updates Notifier Application
+    filever:  7.0.0.470
+    prodver:  7.0.0.470
+chrome.exe (15504)
+    path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+    company:  Google Inc.
+    product:  Google Chrome
+    filedesc: Google Chrome
+    filever:  33.0.1750.154
+    prodver:  33.0.1750.154
+chrome.exe (8656)
+    path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+    company:  Google Inc.
+    product:  Google Chrome
+    filedesc: Google Chrome
+    filever:  33.0.1750.154
+    prodver:  33.0.1750.154
+chrome.exe (15820)
+    path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+    company:  Google Inc.
+    product:  Google Chrome
+    filedesc: Google Chrome
+    filever:  33.0.1750.154
+    prodver:  33.0.1750.154
+chrome.exe (16456)
+    path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+    company:  Google Inc.
+    product:  Google Chrome
+    filedesc: Google Chrome
+    filever:  33.0.1750.154
+    prodver:  33.0.1750.154
+chrome.exe (8768)
+    path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+    company:  Google Inc.
+    product:  Google Chrome
+    filedesc: Google Chrome
+    filever:  33.0.1750.154
+    prodver:  33.0.1750.154
+chrome.exe (16136)
+    path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+    company:  Google Inc.
+    product:  Google Chrome
+    filedesc: Google Chrome
+    filever:  33.0.1750.154
+    prodver:  33.0.1750.154
+chrome.exe (15324)
+    path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+    company:  Google Inc.
+    product:  Google Chrome
+    filedesc: Google Chrome
+    filever:  33.0.1750.154
+    prodver:  33.0.1750.154
+chrome.exe (19548)
+    path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+    company:  Google Inc.
+    product:  Google Chrome
+    filedesc: Google Chrome
+    filever:  33.0.1750.154
+    prodver:  33.0.1750.154
+UnityBugReporter.exe (5852)
     path: C:\Program Files (x86)\Unity\Editor\UnityBugReporter.exe
     company:  Unity Technologies ApS
     product:  Unity Bug Reporter
