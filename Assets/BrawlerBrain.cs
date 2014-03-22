@@ -22,12 +22,14 @@ public class BrawlerBrain : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		// Attempt at reading scene
+		/*
 		Sphere[] sceneSpheres  = FindObjectsOfType (typeof(Sphere)) as Sphere;
 		for (int i=0;i<sceneSpheres.Length;i++) {
 			//myGates[i].OpenGate ();
 			Debug.Log (sceneSpheres[i].transform.name);
 		}
-				
+		*/	
 
 		if (notUsingUserInput == false) {
 						controls ["MouseDirectiony"] = -Input.GetAxis ("Mouse Y");

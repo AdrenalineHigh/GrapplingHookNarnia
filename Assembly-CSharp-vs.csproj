@@ -50,6 +50,7 @@
      <Compile Include="Assets\BeamEdit.cs" />
      <Compile Include="Assets\BeamHandlerScript.cs" />
      <Compile Include="Assets\BrawlerBrain.cs" />
+     <Compile Include="Assets\CheckpointRegistry.cs" />
      <Compile Include="Assets\ConnectionCalculate.cs" />
      <Compile Include="Assets\ConnectionEdit.cs" />
      <Compile Include="Assets\DX11 Particles\Example Scene and Use\Root.cs" />
@@ -58,6 +59,7 @@
      <Compile Include="Assets\DX11 Particles\Scripts\Extensions\DX11ForceExtension.cs" />
      <Compile Include="Assets\DX11 Particles\Scripts\ParticleSaveData.cs" />
      <Compile Include="Assets\DX11 Particles\Utils\Utilities.cs" />
+     <Compile Include="Assets\History.cs" />
      <Compile Include="Assets\MatCap Shaders\Demo\Assets\MC_AutoRotate.cs" />
      <Compile Include="Assets\MatCap Shaders\Demo\Assets\MC_SwitchTexture.cs" />
      <Compile Include="Assets\Post Process Effects\VisualEffects.cs" />
